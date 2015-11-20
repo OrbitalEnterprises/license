@@ -69,6 +69,6 @@
       </plugin>      
     </plugins>
   </build>
-  
-  <url>https://github.com/OrbitalEnterprises/license</url>  
+    
+  <url>https://raw.githubusercontent.com/OrbitalEnterprises/license/master/LICENSE</url>
 </project>
