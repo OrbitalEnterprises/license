@@ -25,7 +25,7 @@
     <developer>
       <id>deadlybulb</id>
       <name>Mark Astley</name>
-      <email>mark@jogley.org</email>
+      <email>deadlybulb@orbital.enterprises</email>
       <roles>
         <role>developer</role>
       </roles>
@@ -70,5 +70,5 @@
     </plugins>
   </build>
     
-  <url>https://raw.githubusercontent.com/OrbitalEnterprises/license/master/LICENSE</url>
+  <url>https://github.com/OrbitalEnterprises/license</url>
 </project>
