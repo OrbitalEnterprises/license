@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>enterprises.orbital</groupId>
+  <artifactId>license</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  
+  <name>Orbital projects license</name>
+  <description>License container for most Orbital projects</description>
+
+  <organization>
+  	<name>Orbital Enterprises</name>
+  	<url>https://github.com/OrbitalEnterprises</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>https://raw.githubusercontent.com/OrbitalEnterprises/orbital/master/license/LICENSE</url>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+      <id>deadlybulb</id>
+      <name>Mark Astley</name>
+      <email>mark@jogley.org</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>America/New_York</timezone>
+    </developer>
+  </developers>
+    
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+          <!-- Shouldn't have to do this, but we do :( -->
+          <argLine>-Dfile.encoding=UTF-8</argLine>
+        </configuration>
+      </plugin>      
+    </plugins>
+  </build>
+  
+  <url>https://github.com/OrbitalEnterprises/license</url>  
+</project>
